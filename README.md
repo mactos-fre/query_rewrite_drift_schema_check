@@ -1,11 +1,11 @@
-# rlrsr_jd302
+# query_rewrite_drift_schema_check
 
 **校验强化学习研究员·查询改写的语义漂移的字段结构并列出缺失项。**
 
-`rlrsr_jd302` —— 从样本里推断强化学习研究员·查询改写的语义漂移应有的字段集合，逐字段检查存在性与类型，缺失项单独列出
+`query_rewrite_drift_schema_check` —— 从样本里推断强化学习研究员·查询改写的语义漂移应有的字段集合，逐字段检查存在性与类型，缺失项单独列出
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`rlrsr_jd302.py` 拷走就能用
+- 单文件，`query_rewrite_drift_schema_check.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install mactos-fre-rlrsr_jd302
+pip install mactos-fre-query_rewrite_drift_schema_check
 ```
 
 装完直接用命令名调用：
 
 ```bash
-rlrsr_jd302 --help
+query_rewrite_drift_schema_check --help
 ```
 
-也可以不用安装，直接把 `rlrsr_jd302.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `query_rewrite_drift_schema_check.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ rlrsr_jd302 --help
 ## 用法
 
 ```bash
-python rlrsr_jd302.py --file input.txt
-python rlrsr_jd302.py --text "示例内容"
-python rlrsr_jd302.py --file input.txt --json
+python query_rewrite_drift_schema_check.py --file input.txt
+python query_rewrite_drift_schema_check.py --text "示例内容"
+python query_rewrite_drift_schema_check.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python rlrsr_jd302.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_rlrsr_jd302.py
+python test_query_rewrite_drift_schema_check.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_rlrsr_jd302.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/mactos-fre/rlrsr_jd302>
+- GitHub 仓库：<https://github.com/mactos-fre/query_rewrite_drift_schema_check>
 
 ---
 
@@ -79,7 +79,7 @@ python test_rlrsr_jd302.py
 mactos-fre 做强化学习研究员·查询改写的语义漂移相关的问题，方向对标美团的架构强化学习研究员岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://mactos-fre.github.io>
-- 仓库：<https://github.com/mactos-fre/rlrsr_jd302>
+- 仓库：<https://github.com/mactos-fre/query_rewrite_drift_schema_check>
 
 ## 许可
 
